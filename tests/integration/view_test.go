@@ -104,7 +104,10 @@ func testSiteManifest(t *testing.T) {
 		"name": %q,
 		"short_name": %q,
 		"start_url": %q,
+		"display": "standalone",
+		"theme_color": "#4183c4",
 		"icons": [
+			{"src": %q, "type": "image/png",     "sizes": "192x192"},
 			{"src": %q, "type": "image/png",     "sizes": "512x512"},
 			{"src": %q, "type": "image/svg+xml", "sizes": "512x512"}
 		]
@@ -112,6 +115,7 @@ func testSiteManifest(t *testing.T) {
 		setting.AppName,
 		setting.AppName,
 		setting.AppURL,
+		assetBase+"/assets/img/logo-192.png",
 		assetBase+"/assets/img/logo.png",
 		assetBase+"/assets/img/logo.svg",
 	)
