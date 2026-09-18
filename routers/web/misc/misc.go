@@ -33,10 +33,13 @@ func SiteManifest(w http.ResponseWriter, req *http.Request) {
 	ctx := req.Context()
 	absoluteAssetURL := strings.TrimSuffix(httplib.MakeAbsoluteURL(ctx, setting.StaticURLPrefix), "/")
 	manifest := map[string]any{
-		"name":       setting.AppName,
-		"short_name": setting.AppName,
-		"start_url":  httplib.GuessCurrentAppURL(ctx),
+		"name":        setting.AppName,
+		"short_name":  setting.AppName,
+		"start_url":   httplib.GuessCurrentAppURL(ctx),
+		"display":     "standalone",
+		"theme_color": "#4183c4", // default light --color-primary; not theme-aware
 		"icons": []map[string]string{
+			{"src": absoluteAssetURL + "/assets/img/logo-192.png", "type": "image/png", "sizes": "192x192"},
 			{"src": absoluteAssetURL + "/assets/img/logo.png", "type": "image/png", "sizes": "512x512"},
 			{"src": absoluteAssetURL + "/assets/img/logo.svg", "type": "image/svg+xml", "sizes": "512x512"},
 		},
