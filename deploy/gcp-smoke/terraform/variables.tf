@@ -1,6 +1,6 @@
 variable "project_id" {
   type        = string
-  description = "GCP project ID"
+  description = "GCP project ID (smoke target: b4m-backyard)"
 }
 
 variable "region" {

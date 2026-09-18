@@ -28,7 +28,7 @@
 ```bash
 cd deploy/gcp-smoke
 cp terraform/terraform.tfvars.example terraform/terraform.tfvars
-# project_id などを編集
+# 既定の project_id は b4m-backyard。region / image_tag など必要なら編集
 
 # 1) イメージをビルドして AR へ push（リポジトリルート前提・時間がかかる）
 ./scripts/build-and-push.sh

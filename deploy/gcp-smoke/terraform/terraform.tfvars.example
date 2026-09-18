@@ -1,4 +1,4 @@
-project_id         = "YOUR_GCP_PROJECT_ID"
+project_id         = "b4m-backyard"
 region             = "us-central1"
 zone               = "us-central1-a"
 artifact_repo_id   = "gitea"
