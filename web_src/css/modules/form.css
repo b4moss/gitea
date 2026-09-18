@@ -410,4 +410,27 @@ input:-webkit-autofill:active {
   .ui.form.left-right-form .inline.field textarea {
     width: 100%;
   }
+
+  /* iOS Safari zooms focused controls when computed font-size is below 16px */
+  input:not([type="checkbox"], [type="radio"]),
+  textarea,
+  select,
+  .ui.input,
+  .ui.input > input,
+  .ui.tiny.input,
+  .ui.tiny.input > input,
+  .ui.small.input,
+  .ui.small.input > input,
+  .ui.form input:not([type="checkbox"], [type="radio"]),
+  .ui.form textarea,
+  .ui.form select,
+  .ui.form .field .dropdown,
+  .ui.selection.dropdown,
+  .ui.search > .prompt,
+  .ui.search.dropdown > input.search,
+  .ui.mini.dropdown,
+  .ui.tiny.dropdown,
+  .ui.small.dropdown {
+    font-size: 16px;
+  }
 }
