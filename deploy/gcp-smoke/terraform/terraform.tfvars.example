@@ -1,0 +1,6 @@
+project_id         = "b4m-backyard"
+region             = "us-central1"
+zone               = "us-central1-a"
+artifact_repo_id   = "gitea"
+image_tag          = "smoke-REPLACE_ME" # from ./scripts/build-and-push.sh
+# allowed_ssh_cidrs = ["203.0.113.10/32"] # optional
