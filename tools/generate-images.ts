@@ -60,6 +60,7 @@ async function main() {
     generateMailIcon('octicon-stop-16', 'status-cancelled', '#8c959f'),
     generateMailIcon('octicon-skip-16', 'status-skipped', '#8c959f'),
     generate(logoSvg, '../public/assets/img/logo.svg', {size: 32}),
+    generate(logoSvg, '../public/assets/img/logo-192.png', {size: 192}),
     generate(logoSvg, '../public/assets/img/logo.png', {size: 512}),
     generate(faviconSvg, '../public/assets/img/favicon.svg', {size: 32}),
     generate(faviconSvg, '../public/assets/img/favicon.png', {size: 180}),
